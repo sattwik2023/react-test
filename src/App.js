@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+
+// import { useState } from 'react';
 import './App.css';
+import PreviousState from './Component/PreviousState';
 
 function App() {
+  // const [formDetails, setName] = useState({
+  //   name:'',
+  //   email:''
+  // });
+  // const formHandler = (e) => {
+  //   e.preventDefault();
+  // }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <form name='myform' onSubmit={formHandler}>
+        <input type='text' name='Name' placeholder='Name' onChange={(e) => setName({...formDetails, name: e.target.value })}/>
+        <input type='text' name='Email' placeholder='Email' onChange={(e) => setName({...formDetails,email: e.target.value})} />
+        <input type='submit' />
+      </form>
+      <h1>Name : {formDetails.name}</h1>
+      <h1>Email: {formDetails.email}</h1> */}
+      <PreviousState/>
     </div>
   );
 }
